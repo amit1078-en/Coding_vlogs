@@ -1,0 +1,36 @@
+<!Doctype html>
+<html lang="fr">
+    <head>
+    <meta charset="utf-8"/>
+       <script type="text/javascript" language="javascript">
+
+       function loadformTest(){
+         document.getElementById('departement').value = '31';
+         document.getElementById('ville').value = 'toulouse';
+         document.getElementById('quoi').value = 'société de services informatiques';
+         annuaire = document.getElementById('annuaire');
+         recherche = document.getElementById('recherche');
+         annuaire.innerHTML = 'Annuaire'
+         annuaire.href = "http://www.pagesjaunes.fr/pagesblanches";
+         recherche.innerHTML = 'Annuaire'
+         recherche.href = "https://google.fr";
+      }
+
+      </script>
+
+    </head>
+    <body>
+     <form id="form" action="" method="post">
+         <p>Quoi,Qui : <input id="quoi" name="quiQuoiSaisi" type="text"/></p>
+         <p>Ville : <input id="ville" name="ville" type="text"/></p>
+         <p>N°Département : <input id="departement" name="departement" type="text"/><p>
+         <button onclick="loadformTest()">Valeurs par défaut </button>
+     </form>
+     <button onclick="loadformTest(); return false;">Valeurs par défaut </button>
+     <a id="recherche" href="" target="_blank"></a>
+     <a id="annuaire" href="" target="_blank"></a>
+   </body>
+</html>
+{% comment %} But if same function is called in the body tag on load the page, the changes are permanent.
+
+My question is perhaps due to my lack of knowledge of Javascript ! {% endcomment %}

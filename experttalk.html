@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_QUTZNFOd6Xs27fqZvkxIf");
+        })();
+    </script>
+    <script src="experttalk.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <title>Coding Vlogs</title>
+
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            font-family: 'Asap', sans-serif;
+        }
+
+        #center {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #img {
+            width: 100%;
+            height: 75px;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        #fonts {
+            font: bold;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Asap', sans-serif;
+        }
+
+        #box {
+            color: white;
+            font-size: 2rem;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .navbar-inner {
+            background: transparent;
+        }
+
+        .nav-item:hover {
+            text-decoration: underline;
+        }
+
+        #active {
+            text-decoration: underline;
+        }
+
+        #form {
+            margin: 8rem 20rem;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        input,
+        textarea {
+            border-radius: 10px;
+            width: 20vw;
+        }
+
+        .inputname {
+            align-items: center;
+            justify-content: center;
+            margin: 2rem 4rem;
+            margin-left: 12rem;
+        }
+
+        .inputname p {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        @media only screen and (max-width: 1000px) {
+
+            input,
+            textarea {
+                border-radius: 15px;
+                width: 40vw;
+            }
+
+            .inputname {
+                margin: 2rem 1rem;
+            }
+
+            #form {
+                margin: 4rem 3rem;
+            }
+        }
+
+        .container H3 {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        p {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .container {
+            background-color: #000000;
+            color: white;
+            border-radius: 10px;
+            padding: 2rem 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./important_Questions.html">Important
+                            Questions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our Vlogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active   " href="./experttalk.html" id="active">Contact With Expert</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Topics
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Write About Coding Article</a></li>
+                            <li><a class="dropdown-item" href="#">Write About Web Technologies</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Help</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <!-- forms -->
+   
+        <div id="form">
+            <div class="container">
+                <div id="center">
+                    <H3>Please Fill In Your personal Details</h3>
+                </div>
+
+                <div class="inputname">
+                    <p>Your Name</p>
+                    <input type="text" name="name" id="name" placeholder="name" style="text-align: center;">
+                </div>
+                <div class="inputname">
+                    <p>Contact Number</p>
+                    <input type="number" name="name" id="phone" placeholder="Phone number" style="text-align: center;">
+                </div>
+                <div class="inputname">
+                    <p>Email account</p>
+                    <input type="email" name="name" id="mail" placeholder="Email" style="text-align: center;">
+                </div>
+                <div class="inputname">
+                    <p>Enter Your Query</p>
+                    <textarea name="text" id="msg" cols="30" rows="1" placeholder="Enter Your Query"
+                        style="text-align: center;"></textarea>
+                </div>
+                <div id="center">
+                    <button class="btn btn-outline-light" id="submit" type="submit" onclick='check()'>Submit</button>
+                </div>
+            </div>
+        </div>
+
+
+</body>
+
+</html>
